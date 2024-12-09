@@ -11,7 +11,10 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Inter', 'sans-serif']
-      }
+      },
+      screens: {
+        'below-1030': {'max': '1030px'},
+      },
     },
   },
   plugins: [tailwindScrollbar],
