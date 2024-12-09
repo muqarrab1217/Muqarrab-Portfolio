@@ -29,10 +29,10 @@ const Header = () => {
             className="logo"
           >
             <img
-              src="/public/images/logo.svg"
+              src="./public/images/logo.svg"
               width={40}
               height={40}
-              alt="Henry Clark"
+              alt="Muqarrab Ahmed"
             />
           </a>
         </h1>
