@@ -10,43 +10,43 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: '/videos/Gym-Management-System.mp4',
+    imgSrc: './videos/Gym-Management-System.mp4',
     title: 'Gym Management System',
     tags: ['Window Forms', 'SQL', 'Development'],
     projectLink: 'https://github.com/muqarrab1217/Gym-Management-Database-System'
   },
   {
-    imgSrc: '/videos/travel-website.mp4',
+    imgSrc: './videos/travel-website.mp4',
     title: 'Travel Website',
     tags: ['HTML', 'CSS', 'JavaScript'],
     projectLink: null
   },
   {
-    imgSrc: '/images/posSystem.png',
+    imgSrc: './images/posSystem.png',
     title: 'Restaurant POS system',
     tags: ['React', 'SpringBoot', 'API', 'MySQL'],
     projectLink: 'https://github.com/muqarrab1217/POS-System'  // Updated to navigate to the login page
   },
   {
-    imgSrc: '/images/project-3.jpg',
+    imgSrc: './images/project-3.jpg',
     title: 'Recipe app',
     tags: ['Development', 'API'],
     projectLink: ''
   },
   {
-    imgSrc: '/images/project-4.jpg',
+    imgSrc: './images/project-4.jpg',
     title: 'Real state website',
     tags: ['Web-design', 'Development'],
     projectLink: 'https://github.com/codewithsadee-org/wealthome'
   },
   {
-    imgSrc: '/images/project-5.jpg',
+    imgSrc: './images/project-5.jpg',
     title: 'eCommerce website',
     tags: ['eCommerce', 'Development'],
     projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
   },
   {
-    imgSrc: '/images/project-6.jpg',
+    imgSrc: './images/project-6.jpg',
     title: 'vCard Personal portfolio',
     tags: ['Web-design', 'Development'],
     projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
