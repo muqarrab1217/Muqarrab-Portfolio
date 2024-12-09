@@ -74,7 +74,7 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
-              classes="reveal-up max-h-[500px] aspect-w-2 aspect-h-1 overflow-hidden"  // Prevent overflow, allow enough space for content
+              classes="reveal-up aspect-w-2 aspect-h-1 overflow-hidden"  // Prevent overflow, allow enough space for content
             />
           ))}
         </div>
