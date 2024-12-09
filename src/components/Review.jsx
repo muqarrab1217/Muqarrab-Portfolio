@@ -26,34 +26,34 @@ import ReviewCard from "./ReviewCard";
 
 const reviews = [
   {
-    content: 'Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.',
-    name: 'Sophia Ramirez',
-    imgSrc: './images/people-1.jpg',
-    company: 'PixelForge'
-  },
-  {
-    content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
-    name: 'Ethan Caldwell',
-    imgSrc: './images/people-2.jpg',
-    company: 'NexaWave'
-  },
-  {
-    content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
-    name: 'Liam Bennett',
-    imgSrc: './images/people-3.jpg',
-    company: 'CodeCraft'
-  },
-  {
-    content: 'Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.',
-    name: 'Noah Williams',
-    imgSrc: './images/people-4.jpg',
-    company: 'BrightWeb'
-  },
-  {
     content: 'Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.',
     name: 'Ava Thompson',
     imgSrc: './images/people-5.jpg',
     company: 'TechMosaic'
+  },
+  {
+    content: 'Great Work ! A Canada Based Client required a full stack desktop based application for his Gym Fitness Store',
+    name: 'Abdoo Sagar',
+    imgSrc: 'https://img.icons8.com/bubbles/50/user.png',
+    company: 'Gym Fitness Store'
+  },
+  {
+    content: 'Creative and skilled! Managing the Social Media Accounts of FAST COMPUTING SOCIETY with great success.',
+    name: 'Fast Computing Society',
+    imgSrc: './images/fcs.jpeg',
+    company: 'Fast Nuces Islamabad'
+  },
+  {
+    content: 'Impressive work! Fast loading times, intuitive design, and smooth backend integration. Highly recommend.',
+    name: 'Qasim Hassan',
+    imgSrc: './images/people-2.jpg',
+    company: 'Fast Nuces Islamabad'
+  },
+  {
+    content: 'Project Well Done ! Point of Sale System of a restaurant is fully functional with real time report generation',
+    name: 'Bashaarat Hussain',
+    imgSrc: './images/sir-bashaarat.jpg',
+    company: 'Fast Nuces Islamabad'
   },
   {
     content: 'Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.',
