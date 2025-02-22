@@ -47,7 +47,7 @@ const ExperienceSection = () => {
           </p>
         </div>
 
-        <div className="mt-12 max-w-5xl mx-auto px-12 relative">
+        <div className="mt-12 max-w-5xl mx-auto px-4 relative">
           {/* Middle Line: Only visible on large screens */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-200 h-full"></div>
 
