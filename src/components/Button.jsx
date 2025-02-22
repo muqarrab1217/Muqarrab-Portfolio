@@ -3,16 +3,7 @@
  * @license Apache-2.0
  */
 
-
-/**
- * Node modules
- */
 import PropTypes from 'prop-types';
-
-
-/**
- * Primary Button
- */
 
 const ButtonPrimary = ({
   href,
@@ -27,8 +18,13 @@ const ButtonPrimary = ({
         href={href}
         target={target}
         download={"Muqarrab's Resume.pdf"}
-        className={"btn btn-primary " + classes}
+        className={
+          "btn btn-primary relative overflow-hidden transition-all duration-300 ease-in-out "
+           + classes
+        }
       >
+        <span className="absolute inset-0 scale-0 bg-blue-400 opacity-50 transition-transform duration-300 rounded-full blur-xl hover:scale-150"></span>
+
         {label}
 
         {icon ?

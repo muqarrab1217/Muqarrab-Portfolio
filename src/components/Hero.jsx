@@ -79,6 +79,7 @@ const Hero = () => {
               href="./Documents/Muqarrab-Resume.pdf"
               label="Download CV"
               icon="download"
+              
             />
 
             <ButtonOutline
@@ -94,8 +95,11 @@ const Hero = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-sky-400 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
-              >
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg 
+                  transition-all duration-300 ease-in-out 
+                  hover:scale-115 hover:shadow-[0_0_15px_rgba(56,189,248,0.6)] 
+                  hover:bg-sky-400 hover:text-zinc-950 
+                  active:bg-zinc-50/80 reveal-up"              >
                 {icon}
               </a>
             ))}

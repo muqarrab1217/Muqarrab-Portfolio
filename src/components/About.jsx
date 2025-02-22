@@ -25,7 +25,7 @@ const About = () => {
       <div className="container">
 
       <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up hover:scale-110 hover:shadow-[0_0_50px_var(--main-color),_0_0_100px_var(--main-color)] transition duration-300" style={{ '--main-color': '#3b82f6' }}>
-          <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
+          <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[80ch]">
           Welcome ! I'm Muqarrab Ahmed, a passionate and skilled developer currently pursuing my studies in Computer Science at FAST Nuces Islamabad. With a strong foundation in Full Stack Database Development and C++ Development, I have honed my technical abilities and problem-solving skills through various projects and coursework.          </p>
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">

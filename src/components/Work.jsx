@@ -1,11 +1,4 @@
-/**
- * @copyright 2024 muqarrabahmed
- * @license Apache-2.0
- */
-
-/**
- * Components
- */
+import { Link } from 'react-router-dom';
 import ProjectCard from "./ProjectCard";
 
 const works = [
@@ -25,7 +18,7 @@ const works = [
     imgSrc: './images/posSystem.png',
     title: 'Restaurant POS system',
     tags: ['React', 'SpringBoot', 'API', 'MySQL'],
-    projectLink: 'https://github.com/muqarrab1217/POS-System'  // Updated to navigate to the login page
+    projectLink: '/Pos_Login',  // Navigate to POS login page
   },
   {
     imgSrc: './images/project-3.jpg',
@@ -52,35 +45,31 @@ const works = [
     projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
   },
 ];
-
-
 const Work = () => {
   return (
-    <section
-      id="work"
-      className="section"
-    >
+    <section id="work" className="section">
       <div className="container">
-
         <h2 className="headline-2 mb-8 reveal-up">
           My portfolio highlights
         </h2>
 
-        <div className="grid gap-x-4 gap-y-5 grid-cols-2 below-1030:grid-cols-1 ">
+        <div className="grid gap-x-4 gap-y-5 grid-cols-2 below-1030:grid-cols-1">
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
               imgSrc={imgSrc}
               title={title}
               tags={tags}
-              projectLink={projectLink}
-              classes="reveal-up aspect-w-2 aspect-h-1 overflow-hidden"  // Prevent overflow, allow enough space for content
+              projectLink={projectLink ? (
+                <Link to={projectLink}>View Project</Link>  // Use Link for internal navigation
+              ) : null}
+              classes="reveal-up aspect-w-2 aspect-h-1 overflow-hidden"
             />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Work;
