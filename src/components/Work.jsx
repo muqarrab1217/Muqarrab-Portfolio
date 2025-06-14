@@ -60,11 +60,7 @@ const Work = () => {
               imgSrc={imgSrc}
               title={title}
               tags={tags}
-              projectLink={projectLink && (
-                <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                  View Project
-                </a>
-              )}
+              projectLink={projectLink}
               classes="reveal-up aspect-w-2 aspect-h-1 overflow-hidden"
             />
           ))}
