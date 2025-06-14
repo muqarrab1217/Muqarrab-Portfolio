@@ -12,7 +12,7 @@ const works = [
     imgSrc: './videos/travel-website.mp4',
     title: 'Travel Website',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    projectLink: null
+    projectLink: 'https://personal-portfolio-dusky-iota-86.vercel.app'
   },
   {
     imgSrc: './images/posSystem.png',
