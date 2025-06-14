@@ -18,7 +18,7 @@ const works = [
     imgSrc: './images/posSystem.png',
     title: 'Restaurant POS system',
     tags: ['React', 'SpringBoot', 'API', 'MySQL'],
-    projectLink: 'https://pos-system-deployable.vercel.app/',  // Navigate to POS login page
+    projectLink: 'https://pos-system-deployable.vercel.app',  // Navigate to POS login page
   },
   {
     imgSrc: './images/project-3.jpg',
