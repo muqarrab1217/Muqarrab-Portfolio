@@ -61,7 +61,7 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink ? (
-                <Link to={projectLink}>View Project</Link>  // Use Link for internal navigation
+                <a href={projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
               ) : null}
               classes="reveal-up aspect-w-2 aspect-h-1 overflow-hidden"
             />
