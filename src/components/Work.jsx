@@ -21,16 +21,16 @@ const works = [
     projectLink: 'https://pos-system-deployable.vercel.app',  // Navigate to POS login page
   },
   {
-    imgSrc: './images/project-3.jpg',
-    title: 'Recipe app',
-    tags: ['Development', 'API'],
-    projectLink: ''
+    imgSrc: './images/pureheal-pharma.png',
+    title: 'Pharmacy Point of Sale',
+    tags: ['Development', 'React', 'Node JS', 'Mongo Atlas', 'API'],
+    projectLink: 'https://pure-heal-pharma-f3gj.vercel.app'
   },
   {
-    imgSrc: './images/project-4.jpg',
+    imgSrc: './images/eventsApp.png',
     title: 'Real state website',
     tags: ['Web-design', 'Development'],
-    projectLink: 'https://github.com/codewithsadee-org/wealthome'
+    projectLink: 'https://cs-4067-assignment-02-i221351-muqar.vercel.app'
   },
   {
     imgSrc: './images/project-5.jpg',
