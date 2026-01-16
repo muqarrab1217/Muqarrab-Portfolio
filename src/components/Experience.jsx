@@ -3,6 +3,34 @@ import React from "react";
 
 const experiences = [
   {
+    title: "AI/ML Engineer Apprentice",
+    company: "Finova",
+    location: "Remote/Hybrid",
+    duration: "June 2025 - Present",
+    type: "Apprenticeship",
+    skills: ["Machine Learning", "NLP", "TTS/STT", "Gemini API", "Hugging Face"],
+    description: [
+      "Assisted in training and fine-tuning machine learning models for classification and NLP tasks.",
+      "Integrated Text-to-Speech (TTS) and Speech-to-Text (STT) models for voice-enabled applications.",
+      "Implemented Gemini File Search API to build document-aware AI assistants.",
+      "Applied Hugging Face pre-trained models for text understanding, summarization, and semantic search."
+    ]
+  },
+  {
+    title: "Freelance AI/ML Projects (Entry-Level)",
+    company: "Self-Employed",
+    location: "Remote",
+    duration: "Aug 2024 - Present",
+    type: "Freelance",
+    skills: ["Python", "Computer Vision", "Data Preprocessing", "Exploratory Analysis"],
+    description: [
+      "Built small-scale AI-driven features such as automated classification and intelligent search.",
+      "Developed proof-of-concept solutions using pre-trained models for generation and classification tasks.",
+      "Prepared datasets through cleaning, labeling, and validation for ML workflows.",
+      "Conducted data preprocessing and exploratory analysis using Python on Google Colab."
+    ]
+  },
+  {
     title: "Lab Demonstrator",
     company: "National University of Computer and Emerging Sciences",
     location: "Islamabad, Pakistan",
@@ -38,60 +66,70 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience">
-      <div className="pt-20 pb-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mt-2">Experience</h2>
-          <p className="text-gray-600 mt-4">
+    <section id="experience" className="section">
+      <div className="container">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="headline-2 reveal-up mx-auto">Experience</h2>
+          <p className="text-zinc-400 mt-4 reveal-up">
             From Challenges to Triumphs – My Professional Journey Unfolded
           </p>
         </div>
 
-        <div className="mt-12 max-w-5xl mx-auto px-4 relative">
+        <div className="relative">
           {/* Middle Line: Only visible on large screens */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-200 h-full"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-zinc-800 h-full"></div>
 
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className={`flex md:flex-row flex-col items-center w-full md:justify-between ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
-            >
-              {/* Timeline Dots (Only on large screens) */}
-              
-              <div className="w-2/5"></div>
-              <div className="hidden md:flex w-1/5 flex justify-center relative">
-                <div className="w-5 h-5 bg-blue-600 border-2 border-blue-500
-                 rounded-full absolute top-1/2 transform -translate-y-1/2"></div>
-              </div>
+          <div className="space-y-12">
+            {experiences.map((exp, index) => (
+              <div
+                key={index}
+                className={`flex md:flex-row flex-col items-center w-full md:justify-between reveal-up ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
+              >
+                {/* Space for the other side */}
+                <div className="hidden md:block w-[45%]"></div>
 
-              {/* Experience Box */}
-              <div className="w-full md:w-2/5 bg-zinc-50/10 p-6 shadow-lg rounded-lg mt-6 md:mt-0">
-                <h3 className="text-lg font-semibold">{exp.title}</h3>
-                <p className="text-gray-500 text-sm">
-                  {exp.company} | {exp.location}
-                </p>
-
-                {/* Skills */}
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {exp.skills.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-600 text-white text-sm font-semibold px-3 py-1 rounded-lg"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                {/* Timeline Dot */}
+                <div className="hidden md:flex w-[10%] justify-center relative z-10">
+                  <div className="w-4 h-4 bg-sky-400 border-4 border-zinc-900 rounded-full shadow-[0_0_10px_rgba(56,189,248,0.5)]"></div>
                 </div>
 
-                {/* Duration */}
-                <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg mt-2">
-                  {exp.duration}
-                </span>
+                {/* Experience Box */}
+                <div className="w-full md:w-[45%] bg-zinc-800/50 p-6 rounded-2xl border border-zinc-700/50 hover:border-sky-400/30 transition-colors shadow-sm">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="title-1 text-sky-400">{exp.title}</h3>
+                    <span className="text-xs font-medium px-2 py-1 bg-zinc-700 text-zinc-300 rounded-md">
+                      {exp.duration}
+                    </span>
+                  </div>
+
+                  <p className="text-zinc-400 text-sm mb-4">
+                    {exp.company} • {exp.location}
+                  </p>
+
+                  {exp.description && (
+                    <ul className="list-disc list-outside ml-4 text-zinc-300 text-sm space-y-2 mb-4">
+                      {exp.description.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Skills */}
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill, i) => (
+                      <span
+                        key={i}
+                        className="text-[10px] uppercase tracking-wider font-bold text-zinc-500 bg-zinc-900 px-2 py-1 rounded"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -12,42 +12,42 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: './images/html.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/html.svg',
     label: 'HTML',
     desc: 'Web Development'
   },
   {
-    imgSrc: './images/css3.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/css3.svg',
     label: 'CSS',
     desc: 'User Interface'
   },
   {
-    imgSrc: './images/javascript.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/javascript.svg',
     label: 'JavaScript',
     desc: 'Interaction'
   },
   {
-    imgSrc: './images/tailwindcss.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/tailwindcss.svg',
     label: 'TailwindCSS',
     desc: 'User Interface'
   },
   {
-    imgSrc: './images/react.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/react.svg',
     label: 'React',
     desc: 'Framework'
   },
   {
-    imgSrc: './images/springboot.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/springboot.svg',
     label: 'SpringBoot',
     desc: 'Backend Development'
   },
   {
-    imgSrc: './images/mongodb.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/mongodb.svg',
     label: 'MongoDB',
     desc: 'Database'
   },
   {
-    imgSrc: './images/sql.svg',
+    imgSrc: '/Muqarrab-Portfolio/images/sql.svg',
     label: 'SQL Server',
     desc: 'Database'
   },

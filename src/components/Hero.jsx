@@ -45,7 +45,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-28 lg:pt-36"
+      className="pt-38 lg:pt-56"
     >
       <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
 
@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src="./images/profile.jpg"
+                src="/Muqarrab-Portfolio/images/profile.jpg"
                 width={40}
                 height={40}
                 alt="Muqarrab Ahmed portrait"
@@ -76,10 +76,10 @@ const Hero = () => {
 
           <div className="flex items-center gap-3">
             <ButtonPrimary
-              href="./Documents/Muqarrab-Resume.pdf"
+              href="./Documents/Muqarrab-Resume-aiml.pdf"
               label="Download CV"
               icon="download"
-              
+
             />
 
             <ButtonOutline
@@ -108,9 +108,9 @@ const Hero = () => {
         </div>
 
         <div className="hidden lg:block">
-        <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-sky-400/40 to-sky-400/20 rounded-[60px] overflow-hidden hover:scale-110 hover:shadow-[0_0_50px_rgb(59,130,246),_0_0_100px_rgb(59,130,246)] transition duration-300">
-        <img
-              src="./images/profile.jpg"
+          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-sky-400/40 to-sky-400/20 rounded-[60px] overflow-hidden hover:scale-110 hover:shadow-[0_0_50px_rgb(59,130,246),_0_0_100px_rgb(59,130,246)] transition duration-300">
+            <img
+              src="/Muqarrab-Portfolio/images/profile.jpg"
               width={656}
               height={800}
               alt="Muqarrab Ahmed"

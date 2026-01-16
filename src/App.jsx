@@ -11,6 +11,7 @@ import { ReactLenis } from 'lenis/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 /**
@@ -31,9 +32,10 @@ import Experience from "./components/Experience";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AndroidAppShowcase from "./components/AndroidAppShowcase";
 
 
-const App = () => {
+const Home = () => {
 
   useGSAP(() => {
     const elements = gsap.utils.toArray('.reveal-up');
@@ -70,6 +72,18 @@ const App = () => {
     </ReactLenis>
   )
 
+}
+
+
+const App = () => {
+  return (
+    <Router basename="/Muqarrab-Portfolio">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/android" element={<AndroidAppShowcase />} />
+      </Routes>
+    </Router>
+  )
 }
 
 
